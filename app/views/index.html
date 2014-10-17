@@ -1,0 +1,12 @@
+<h1>Vingle thumbnail area experiment</h1>
+
+<h3> <?=$res['completed_count']?> images are completed</h3>
+<h4> <?=$res['rest_count']?> images are left</h4>
+
+<input type="hidden" name="idx" value="<?=$res['image']->idx?>"/>
+<p>
+<img src="<?=$res['image']->url?>" id="sexy" border=0/>
+</p>
+<button id="submit" type="submit" style="width:304px;height:180px;font-size:25px">SUBMIT</button>
+
+<slowscript src="/assets/scripts/index.js"></script>
